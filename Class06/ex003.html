@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color:rgb(255, 253, 251);
+            color: blueviolet;
+            font: normal 20pt Times;
+        }
+        h1 {
+            color:black
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>Já me livrei da maldição!</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número')) //o window.pronpt é lido como uma string  //preciso converter a string de cima para numero (parseInt para numero inteiro e parseFloat para números com virgula posso usar só numeber também, dai o javascrip vai decidir)
+        var n2 = Number(window.prompt('Digite outro número')) //o window.pronpt é lido como uma string //preciso converter a string de cima para numero (parseInt para numero inteiro e parseFloat para números com virgula posso usar só numeber também, dai o javascrip vai decidir)
+        var s = n1 + n2  //para converter numero para string posso usar String(n) ou n.toString()
+        window.alert(`A soma de ${n1} e ${n2} é igual a ${s}`)//parei no minuto 27
+    </script>
+</body>
+</html>
