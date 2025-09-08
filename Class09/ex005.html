@@ -16,10 +16,33 @@
     <h1>Start larning DOM</h1>
     <p>This is the results</p>
     <p>Learning to use the <strong>DOM<strong> with JavaScript.</strong></p>
-    <div>Click here</div>
+    
+    <div id = 'msg'>Click here</div>
     <script> 
-        window.document.write('Helo, World')
+     // SELECIONAR POR ID (TEMOS QUE DAR UM ID PARA OQUE FORMOS MODIFICAR {NESSE CASO O DIV}) =  <div id = 'msg'>Click here</div>
+        // var d = window.document.getElementById('msg')
+        // d.style.background = 'pink'
+        // d.innerText = 'Estou aguardando você...'
+
+     // SELECIONAR POR NAME (TEMOS QUE DAR UM NOME PARA OQUE FORMOS MODIFICAR {NESSE CASO O DIV}) =  <div name = 'msg'>Click here</div>
+        // var d = window.document.getElementsByName('msg')[0]
+        //d.innerText = 'Estou aguardando você...'
+    
+     // SELECIONAR POR CLASS (TEMOS QUE DAR UMA CLASS PARA OQUE FORMOS MODIFICAR {NESSE CASO O DIV}) = <div class = 'msg'>Click here</div>
+        //var d = window.document.getElementsByClassName('msg')[0]
+        //d.innerText = 'Estou aguardando ...'
+
+     // SELECIONAR POR SELETOR (TEMOS QUE DAR UM CLASS PARA OQUE FORMOS MODIFICAR {NESSE CASO O DIV}) =  <div class = 'msg'>Click here</div>
+     //var d = window.document.querySelector('div.msg') (se tenho uma class, tenho que usar o . e não o # )
+     //d.style.color = 'blue'
+
+     // SELECIONAR POR SELETOR (TEMOS QUE DAR UM ID PARA OQUE FORMOS MODIFICAR {NESSE CASO O DIV}) =  <div id = 'msg'>Click here</div>
+     var d = window.document.querySelector('div#msg')
+     d.style.color = 'blue'
+     
+     var p1 = window.document.getElementsByTagName('p')[1] //selecionar por tagName
+     window.document.write('Está escrito assim: ' + p1.innerText)
 
     </script>
 </body>
-</html>
+</html> 
